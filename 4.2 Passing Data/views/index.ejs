@@ -1,0 +1,33 @@
+<!-- Passing DATA from EJS -> Server -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Name Letters</title>
+</head>
+
+<body>
+  <!-- Write your code here -->
+  <% if (locals.length) { %>
+    <h1>There are <%= length %> number of letters in your Name</h1>
+  <% } else { %>
+    <h1>Write your name below: </h1>
+  <% } %>
+  <form action="/submit" method="POST">
+    <input type="text" name="fName" placeholder="First name">
+    <input type="text" name="lName" placeholder="Last name">
+    <input type="submit" value="OK">
+  </form>
+</body>
+
+</html>
+
+<!-- FACT -->
+<!-- WHAT IF THERE IS NO DATA ??
+  If there is something called in EJS file which is not in Server file
+  then the EJS file will not be run, if we add "if-else" statement then also the EJS file will not run, EJS is a "TEMPLATING Language".
+
+  Use "locals" keyword checks all variables sent through res.render
+ -->

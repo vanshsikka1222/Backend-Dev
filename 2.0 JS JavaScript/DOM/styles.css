@@ -1,0 +1,10 @@
+/* Can inspect the page and see all HTML in STYLES panel */
+/* Main CSS File */
+body {
+    background-color: aqua;
+}
+
+h1 {
+    color: red;
+    background-color: rgb(236, 253, 107);
+}

@@ -1,0 +1,19 @@
+API Authentication levels
+
+0. No Authentication (PUBLIC APIs)
+Sometimes when API is used by many unknown users, there is no Authentication but a limit on the usage, like: API requests are rate limited to 100 requests every 15 minutes.
+
+1. Basic Authentication 
+When you make API request, you provide your Username & Password, to prove your identity, this is done using Base64 Encoding
+Eg: username:password --> XXXXXXXXXXXX (Base64 Encoding)
+Eg: vanshsikka:12221223 --> dmFuc2hzaWtrYToxMjIyMTIyMw== (Encoded)
+
+2. API Key Authorization
+Generating a key using a particulae endpoint.
+
+3. Token Based Authentication/ OOATH (Most Secure) and mostly used
+After logging in using username & password, the API token is generated, which provides additional security, token is used to interact with the API
+
+Check and try it on POSTMAN 
+API : "https://secrets-api.appbrewery.com/"
+

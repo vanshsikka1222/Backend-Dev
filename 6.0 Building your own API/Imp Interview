@@ -1,0 +1,12 @@
+Q: What makes an API RESTful ??
+A: 
+   1. It uses standard HTTP Methods (Get, Post, Put, Patch, Delete)
+   2. JSON Output (Standard format is used always to provide data to client)
+   3. Clients & Server in REST API's are completely SEPERATE (neither on same system, nor on same file), and maintain proper communication with each other, and also both sides scale independently.
+   4. Stateless : Each and every request can be complete and get a proper response regardless previous operations or requests sent to server,(means the requests doesn't depend on previous STATES)
+   5. Resource-Based : RESTFul API's use Universal Resource Identifier/Locator (URI/URL) to find a particular resource in API
+
+Eg: INTERNET is regarded as the best example of RESTful Architecture
+
+
+
